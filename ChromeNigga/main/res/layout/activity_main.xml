@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="com.example.bilalakbar.chromenigga.MainActivity"
+    android:background="@drawable/imagesss">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@drawable/imagesss"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFDFE"
+        android:minHeight="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/webViewBack"
+            android:layout_width="40dp"
+            android:layout_height="56dp"
+            android:layout_alignParentTop="true"
+
+            android:layout_marginRight="2.5dp"
+            android:padding="5dp"
+            android:src="@drawable/b1"
+            tools:ignore="UnknownId" />
+
+        <ImageView
+            android:id="@+id/webViewForward"
+            android:layout_width="40dp"
+            android:layout_height="56dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:layout_toEndOf="@+id/webViewBack"
+
+            android:padding="5dp"
+            android:src="@drawable/f1" />
+
+        <ImageView
+            android:id="@+id/webViewReload"
+            android:layout_width="30dp"
+            android:layout_height="54dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:layout_toEndOf="@+id/webViewForward"
+
+            android:padding="5dp"
+            android:src="@drawable/r1" />
+
+        <ImageView
+            android:id="@+id/webViewVoice"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="end"
+
+            android:layout_toStartOf="@+id/webViewClose"
+            android:padding="5dp"
+            android:src="@drawable/v1" />
+
+        <ImageView
+            android:id="@+id/webViewClose"
+            android:layout_width="30dp"
+            android:layout_height="56dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+
+            android:padding="5dp"
+            android:src="@drawable/close" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="123dp"
+
+            android:layout_height="48dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:ems="100"
+            android:hint="Enter URL !!!"
+            android:padding="5dp" />
+
+        <ImageView
+            android:id="@+id/SearchWeb"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="2.5dp"
+            android:layout_toEndOf="@+id/editText1"
+
+            android:padding="5dp"
+            android:src="@drawable/s1" />
+
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/sitesWebView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/imagesss"></WebView>
+
+</LinearLayout>
